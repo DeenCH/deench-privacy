@@ -1,94 +1,97 @@
 <!doctype html>
-<html lang="de">
+<html lang="de-CH">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="index,follow">
   <title>Datenschutzerklärung – DeenCH</title>
-  <meta name="description" content="Datenschutzerklärung der Android-App DeenCH.">
+  <meta name="description" content="Datenschutzerklärung für DeenCH auf Android, iPhone und Apple Watch sowie für Website und Support.">
   <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #f6f4ee;
-      --card: #ffffff;
-      --text: #1d2522;
-      --muted: #5e6964;
-      --line: #dfe5e1;
-      --accent: #8a6b2f;
-      --soft: #f0ede4;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #101512;
-        --card: #171d1a;
-        --text: #eef2ef;
-        --muted: #aab4ae;
-        --line: #2b3530;
-        --accent: #d4b56d;
-        --soft: #202823;
-      }
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.65;
-    }
-    main {
-      max-width: 920px;
-      margin: 0 auto;
-      padding: 48px 20px 72px;
-    }
-    article {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 34px;
-      box-shadow: 0 8px 28px rgba(0,0,0,.05);
-    }
-    h1, h2, h3 { line-height: 1.25; }
-    h1 { margin-top: 0; font-size: 2rem; }
-    h2 { margin-top: 2.1rem; font-size: 1.25rem; }
-    h3 { margin-top: 1.35rem; font-size: 1.05rem; }
-    p, li { color: var(--text); }
-    .muted { color: var(--muted); }
-    a { color: var(--accent); }
-    .summary {
-      margin: 1.5rem 0 2rem;
-      padding: 18px 20px;
-      background: var(--soft);
-      border: 1px solid var(--line);
-      border-radius: 14px;
-    }
-    .summary strong { display: block; margin-bottom: .5rem; }
-    .summary ul { margin: .4rem 0 0; padding-left: 1.2rem; }
-    .note {
-      border-left: 4px solid var(--accent);
-      padding: 10px 14px;
-      margin: 1rem 0;
-      background: var(--soft);
-      border-radius: 0 10px 10px 0;
-    }
-    footer {
-      margin-top: 24px;
-      color: var(--muted);
-      font-size: .92rem;
-      text-align: center;
-    }
+    :root {color-scheme:light dark; --page:#f6f5f0; --paper:#fffefa; --ink:#202e2a; --quiet:#52645c; --line:#d1dcd3; --wash:#edf3ed; --link:#18553f; --gold:#a57c39}
+    @media(prefers-color-scheme:dark){:root{--page:#101a16;--paper:#16221c;--ink:#eef3ec;--quiet:#bbcabf;--line:#3c5044;--wash:#203128;--link:#b0e3c5;--gold:#d3ae6a}}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--page);color:var(--ink);font:1rem/1.7 system-ui,-apple-system,sans-serif;overflow-wrap:break-word}
+    main{max-width:76rem;margin:auto;padding:clamp(.75rem,3vw,3rem)}
+    .cover{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(112deg,#112f26,#214d3c);color:#fffcf1;border-radius:1rem;padding:clamp(1.4rem,4vw,3.6rem)}
+    .cover::after,.cover::before{content:"";position:absolute;z-index:-1;pointer-events:none;border:1px solid #bd9d6042;width:20rem;height:20rem;right:-7rem;top:-8rem;transform:rotate(45deg);box-shadow:0 0 0 1.6rem #15392e,0 0 0 calc(1.6rem + 1px) #bd9d6030}
+    .cover::after{transform:rotate(15deg)}
+    .brand{display:flex;align-items:center;gap:.65rem;font:600 1.3rem Georgia,serif;letter-spacing:.035em;color:#f0ddb0}
+    .brand img{width:2.5rem;height:2.5rem;border-radius:.6rem}
+    h1,h2,.summary>strong{font-family:Georgia,"Times New Roman",serif;font-weight:500}
+    h1{font-size:clamp(1.65rem,4.8vw,3.8rem);letter-spacing:-.038em;line-height:1.12;margin:1.5rem 0 .85rem;hyphens:auto}
+    .muted{margin:0;color:#d1ded3;font-size:.92rem}.muted strong{font-weight:550}
+    .reading{display:grid;grid-template-columns:minmax(12rem,16rem) minmax(0,1fr);align-items:start;gap:clamp(1.25rem,3vw,3.25rem);margin-top:1.8rem}
+    nav{position:sticky;top:1rem;max-height:calc(100vh - 2rem);overflow:auto;padding:.25rem .65rem 1rem .25rem;scrollbar-width:thin}
+    nav summary{font-weight:650;cursor:pointer;padding:.55rem 0}
+    nav ol{padding-left:2.05rem;margin:.6rem 0 0;border-top:1px solid var(--line)}
+    nav li{padding:.35rem .15rem;font-size:.9rem;line-height:1.4}nav li::marker{color:var(--quiet);font-variant-numeric:tabular-nums}
+    nav a{text-decoration:none;color:var(--ink);display:block}nav a:hover{text-decoration:underline}
+    article{border:1px solid var(--line);background:var(--paper);padding:clamp(1.15rem,3.8vw,3.6rem);border-radius:1rem;min-width:0}
+    article>p:first-child{margin-top:0;font-size:1.12rem}
+    h2{font-size:clamp(1.45rem,2.35vw,1.95rem);line-height:1.24;margin:2.4rem 0 1rem;padding-top:1.5rem;border-top:1px solid var(--line);scroll-margin-top:1rem}
+    h3{font-size:1.08rem;line-height:1.4;margin:1.65rem 0 .5rem}
+    p{margin:.8rem 0}article ul{padding-inline-start:1.4rem}li+li{margin-top:.22rem}
+    a{color:var(--link);text-underline-offset:.18em;overflow-wrap:anywhere}
+    :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+    .summary,.note{background:var(--wash);border-left:3px solid var(--gold);padding:1.2rem 1.4rem;border-radius:0 .6rem .6rem 0}
+    .summary{margin:1.5rem 0}.summary>strong{font-size:1.55rem}.summary ul{margin:.65rem 0 0}.summary li::marker{color:var(--link)}
+    footer{text-align:center;color:var(--quiet);font-size:.9rem;margin:2rem 0}
+    .compact{display:none}
+    @media(max-width:54rem){.reading{display:block;margin-top:.85rem}.wide{display:none}.compact{display:block;position:static;max-height:none;margin:0 0 .85rem;background:var(--paper);border:1px solid var(--line);border-radius:.75rem;padding:.3rem 1rem}.compact li{padding:.4rem}.cover::after,.cover::before{opacity:.52}}
+    @media print{:root{color-scheme:light}body,article{background:white;color:black}main,article,.cover{padding:0;border:0}.cover{background:white;color:black}.muted,.brand{color:black}.cover::before,.cover::after,nav{display:none!important}.reading{display:block}h2,h3{break-after:avoid}}
   </style>
 </head>
 <body>
 <main>
-  <article>
+  <header class="cover">
+    <div class="brand"><img src="data:image/png;base64,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" alt="" width="40" height="40">DeenCH</div>
     <h1>Datenschutzerklärung für DeenCH</h1>
-    <p class="muted"><strong>Stand:</strong> 13. September 2026 · <strong>Version:</strong> 2.0</p>
+    <p class="muted"><strong>Stand 25. November 2026 · Android, iPhone und Apple Watch</strong></p>
+  </header>
+  <div class="reading">
+    <nav class="wide" aria-label="Inhaltsverzeichnis"><details open><summary>Inhaltsverzeichnis</summary><ol>
+<li><a href="#verantwortlicher">Verantwortlicher und Datenschutzkontakt</a></li>
+<li><a href="#geltungsbereich">Für welche Angebote gilt diese Erklärung?</a></li>
+<li><a href="#standort">Standortdaten</a></li>
+<li><a href="#lokale-daten">Lokal gespeicherte App-Daten</a></li>
+<li><a href="#apple-watch">Erinnerungen und Apple Watch</a></li>
+<li><a href="#support">Kontakt mit dem Support</a></li>
+<li><a href="#teilen">Webseiten öffnen, Inhalte teilen und kopieren</a></li>
+<li><a href="#tracking">Werbung, Analyse, Tracking und Verkauf von Daten</a></li>
+<li><a href="#konten">Benutzerkonten, Käufe und Abonnements</a></li>
+<li><a href="#empfaenger">Wer welche Daten erhält</a></li>
+<li><a href="#ausland">Bearbeitung von Personendaten im Ausland</a></li>
+<li><a href="#speicherdauer">Speicherdauer und Löschung</a></li>
+<li><a href="#rechte">Auskunft, Berichtigung und Löschung</a></li>
+<li><a href="#datensicherheit">Schutz Ihrer Daten</a></li>
+<li><a href="#minderjaehrige">Minderjährige</a></li>
+<li><a href="#rechtsrahmen">Rechtsrahmen</a></li>
+<li><a href="#aenderungen">Änderungen und neue Funktionen</a></li>
+<li><a href="#kontakt">Kontakt</a></li>
+</ol></details></nav>
+    <nav class="compact" aria-label="Inhaltsverzeichnis"><details><summary>Inhaltsverzeichnis</summary><ol>
+<li><a href="#verantwortlicher">Verantwortlicher und Datenschutzkontakt</a></li>
+<li><a href="#geltungsbereich">Für welche Angebote gilt diese Erklärung?</a></li>
+<li><a href="#standort">Standortdaten</a></li>
+<li><a href="#lokale-daten">Lokal gespeicherte App-Daten</a></li>
+<li><a href="#apple-watch">Erinnerungen und Apple Watch</a></li>
+<li><a href="#support">Kontakt mit dem Support</a></li>
+<li><a href="#teilen">Webseiten öffnen, Inhalte teilen und kopieren</a></li>
+<li><a href="#tracking">Werbung, Analyse, Tracking und Verkauf von Daten</a></li>
+<li><a href="#konten">Benutzerkonten, Käufe und Abonnements</a></li>
+<li><a href="#empfaenger">Wer welche Daten erhält</a></li>
+<li><a href="#ausland">Bearbeitung von Personendaten im Ausland</a></li>
+<li><a href="#speicherdauer">Speicherdauer und Löschung</a></li>
+<li><a href="#rechte">Auskunft, Berichtigung und Löschung</a></li>
+<li><a href="#datensicherheit">Schutz Ihrer Daten</a></li>
+<li><a href="#minderjaehrige">Minderjährige</a></li>
+<li><a href="#rechtsrahmen">Rechtsrahmen</a></li>
+<li><a href="#aenderungen">Änderungen und neue Funktionen</a></li>
+<li><a href="#kontakt">Kontakt</a></li>
+</ol></details></nav>
+  <article>
 
     <p>
-      Diese Datenschutzerklärung informiert darüber, wie die Android-App
-      <strong>DeenCH</strong> auf Nutzer- und Gerätedaten zugreift, zu welchen Zwecken
+      Diese Datenschutzerklärung informiert darüber, wie <strong>DeenCH</strong> auf Android, dem iPhone und der gekoppelten Apple Watch mit Ihren Daten umgeht, zu welchen Zwecken
       Daten verarbeitet werden, ob Daten an Dritte gelangen können und welche
       Wahlmöglichkeiten Nutzer haben.
     </p>
@@ -104,11 +107,12 @@
         <li>Gebetszeiten und Qibla werden grundsätzlich lokal auf dem Gerät berechnet.</li>
         <li>Für die Auflösung eines Ortsnamens kann ein vom Gerät bereitgestellter Standort-/Geocoding-Dienst verwendet werden.</li>
         <li>App-Einstellungen, Lesestände und ähnliche Präferenzen werden grundsätzlich lokal gespeichert.</li>
+        <li>Wenn die DeenCH-App auf der gekoppelten Apple Watch installiert ist, erhält die Uhr vom iPhone den Ortsnamen bzw. die Ortsanzeige, die gewählte Sprache und den berechneten Gebetsplan. Der Tasbih-Zählstand bleibt auf der Uhr.</li>
         <li>DeenCH verkauft keine Nutzerdaten.</li>
       </ul>
     </div>
 
-    <h2>1. Verantwortlicher und Datenschutzkontakt</h2>
+    <h2 id="verantwortlicher">1. Verantwortlicher und Datenschutzkontakt</h2>
     <p>
       <strong>Verantwortlicher:</strong> Besim Imeri (DeenCH), Schweiz<br>
       <strong>App:</strong> DeenCH<br>
@@ -116,27 +120,22 @@
       <a href="mailto:kontakt.deench@outlook.com">kontakt.deench@outlook.com</a>
     </p>
 
-    <h2>2. Geltungsbereich</h2>
-    <p>
-      Diese Datenschutzerklärung gilt für die Android-App DeenCH in der jeweils
-      veröffentlichten Version. Sie beschreibt die Datenverarbeitung durch DeenCH selbst.
-      Werden Nutzer auf eigenen Wunsch an externe Apps, Webseiten oder Systemdienste
-      weitergeleitet, können zusätzlich die Datenschutzbestimmungen der jeweiligen
-      Anbieter gelten.
-    </p>
+    <h2 id="geltungsbereich">2. Für welche Angebote gilt diese Erklärung?</h2>
+    <p>Diese Erklärung gilt für DeenCH auf Android und iPhone, die begleitende App auf der gekoppelten Apple Watch, diese Datenschutzseite und den E-Mail-Support.</p>
+    <p>Einige Funktionen verwenden andere Dienste. Wenn Sie zum Beispiel in DeenCH eine Quellenangabe öffnen, ruft Ihr Browser die verlinkte Seite auf. Wenn Sie einen Vers teilen, wählen Sie im Teilen-Menü, welche App den Text erhält. Wie der jeweilige Anbieter die dabei erhaltenen Daten bearbeitet, beschreibt er in seinen Datenschutzhinweisen. Was DeenCH selbst dabei weitergibt, lesen Sie in Abschnitt 7.</p>
+    <p>Andere Vorgänge laufen innerhalb der gewählten Funktion automatisch ab. Bei der Ortssuche kann das iPhone eine Anfrage an Apple stellen. Bei installierter Watch-App kann das iPhone den Gebetsplan an die Uhr übertragen. Die Abschnitte 3 und 5 erklären, welche Angaben dafür verwendet werden.</p>
 
-    <h2>3. Standortdaten</h2>
+    <h2 id="standort">3. Standortdaten</h2>
 
     <h3>3.1 Welche Standortdaten können verwendet werden?</h3>
     <p>
       Wenn Nutzer die Standortberechtigung erteilen, kann DeenCH auf den
       <strong>ungefähren und genauen Standort</strong> des Geräts zugreifen.
-      Die Berechtigung ist freiwillig und kann in den Android-Einstellungen jederzeit
-      verweigert oder entzogen werden.
+      Die Berechtigung ist freiwillig. Sie kann in den Standort-Einstellungen des jeweiligen Geräts geändert oder entzogen werden. Auf dem iPhone nutzt DeenCH die Berechtigung beim Verwenden der App. Nutzer können die Option „Genauer Standort“ in den iOS-Einstellungen anpassen.
     </p>
 
     <h3>3.2 Wofür wird der Standort verwendet?</h3>
-    <p>Der Standort wird ausschließlich für App-Funktionen verwendet, insbesondere um:</p>
+    <p>Der Standort wird ausschliesslich für App-Funktionen verwendet, insbesondere um:</p>
     <ul>
       <li>standortabhängige Gebetszeiten zu berechnen,</li>
       <li>die Qibla-Richtung zu bestimmen,</li>
@@ -162,14 +161,16 @@
       Standortkoordinaten nicht in einer eigenen serverseitigen Datenbank.
     </p>
 
+    <p>Um auf dem iPhone den Namen eines Ortes anzuzeigen, übergibt DeenCH dessen Koordinaten an Apples Ortssuche. Wer einen Ort manuell sucht, übergibt den eingegebenen Ortsnamen an denselben Dienst. DeenCH kann die Koordinaten von Suchtreffern nochmals abfragen, um den Ort in der Schweiz zu bestätigen. Apple kann diese Anfragen über das Internet verarbeiten. Gebetszeiten und die Richtung zur Kaaba berechnet DeenCH auf dem Gerät. <a href="https://www.apple.com/legal/privacy/data/en/location-services/">Apple informiert über den Datenschutz bei Ortungsdiensten.</a></p>
+    <p>Für den Qibla-Kompass nutzt DeenCH bei erteilter Standortfreigabe während der Anzeige Standort- und Richtungsmessungen, um geografisch Nord zu bestimmen. Beim Verlassen der Ansicht oder Wechsel in den Hintergrund beendet die App diese Messungen.</p>
+
     <h3>3.4 Alternative ohne automatischen Standort</h3>
     <p>
-      Nutzer können den automatischen Standort ablehnen und – soweit von der App
-      angeboten – einen Ort manuell auswählen. Dadurch bleiben wesentliche
-      standortabhängige Funktionen weiterhin nutzbar.
+      Nutzer können den automatischen Standort ablehnen und einen Schweizer Ort manuell auswählen.
+      Bei automatischer Ortswahl kann DeenCH die letzte vom iPhone bereitgestellte Position berücksichtigen. Fehlt ein verwendbarer Standort in der Schweiz, verwendet die App Bern als gekennzeichneten Ersatzstandort. Automatische Standortmessungen hält die App im Arbeitsspeicher. Einen manuell bestätigten Ort speichert sie für den nächsten Start.
     </p>
 
-    <h2>4. Lokal gespeicherte App-Daten</h2>
+    <h2 id="lokale-daten">4. Lokal gespeicherte App-Daten</h2>
     <p>
       DeenCH speichert bestimmte Daten lokal auf dem Gerät, damit Einstellungen und
       Fortschritte erhalten bleiben. Dazu können insbesondere gehören:
@@ -177,12 +178,13 @@
     <ul>
       <li>gewählte Sprache und Darstellungsoptionen,</li>
       <li>persönliche Minutenanpassungen für Gebetszeiten,</li>
-      <li>manuell ausgewählter Ort,</li>
+      <li>manuell bestätigter Ort mit Koordinaten, Ortsangaben und Zeitpunkt der Auswahl,</li>
       <li>Benachrichtigungseinstellungen,</li>
-      <li>gespeicherte Lesestände, Fortschritt und ähnliche Präferenzen,</li>
+      <li>die letzte Lesestelle und selbst gesetzte Lesezeichen im Qurʾān sowie Leseeinstellungen,</li>
       <li>der Status, ob Einführung oder Tutorial bereits angezeigt wurden.</li>
     </ul>
     <p>
+      Beim Zurückwechseln zur automatischen Ortswahl entfernt DeenCH den gespeicherten manuellen Ort.
       Diese Daten werden von DeenCH nicht zu einem eigenen Nutzerkonto hochgeladen und
       nicht für Werbung oder Profiling verwendet.
     </p>
@@ -190,10 +192,13 @@
       DeenCH betreibt derzeit keine eigene konto-basierte Cloud-Synchronisierung oder
       Cloud-Backup-Funktion. Unabhängige Sicherungsfunktionen des Betriebssystems oder
       Geräteherstellers richten sich nach den Einstellungen und Bedingungen des
-      jeweiligen Systems und werden nicht von DeenCH betrieben.
+      jeweiligen Systems und werden nicht von DeenCH betrieben. Auf dem iPhone können Einstellungen und Lesestände je nach gewählter Gerätesicherung in einem iCloud- oder Computer-Backup enthalten sein.
     </p>
 
-    <h2>5. Benachrichtigungen</h2>
+    <p>Lesestellen, Lesezeichen und sichtbare Gebetserinnerungen können Rückschlüsse auf religiöse Überzeugungen zulassen, wenn sie einer Person zugeordnet werden. DeenCH verwendet diese Angaben für die gewählte Funktion. Auf dem iPhone lässt sich ein Qurʾān-Lesezeichen durch erneutes Antippen entfernen. Der Tasbih-Zähler führt seinen Stand für die laufende Sitzung. DeenCH erstellt daraus keinen persönlichen Gebetsverlauf.</p>
+
+    <h2 id="apple-watch">5. Erinnerungen und Apple Watch</h2>
+    <h3>5.1 Lokale Gebetserinnerungen</h3>
     <p>
       DeenCH kann nach Zustimmung des Nutzers lokale Benachrichtigungen und Erinnerungen,
       insbesondere im Zusammenhang mit Gebetszeiten, auf dem Gerät planen.
@@ -201,35 +206,30 @@
       Benachrichtigungen kein serverseitiges Nutzerprofil.
     </p>
 
-    <h2>6. Support, E-Mail und freiwillige Kontaktaufnahme</h2>
-    <p>
-      Wenn Nutzer DeenCH freiwillig per E-Mail kontaktieren, werden die von ihnen
-      übermittelten Angaben – etwa E-Mail-Adresse, Inhalt der Nachricht und freiwillig
-      beigefügte Informationen – zur Bearbeitung der Anfrage verwendet.
-    </p>
-    <p>
-      Support-Kommunikation wird nur so lange aufbewahrt, wie dies zur Bearbeitung der
-      Anfrage und möglicher Rückfragen erforderlich ist, sofern keine gesetzlichen
-      Pflichten oder berechtigten Gründe eine längere Aufbewahrung erfordern.
-      Nutzer können unter
-      <a href="mailto:kontakt.deench@outlook.com">kontakt.deench@outlook.com</a>
-      eine Löschungs- oder Datenschutzanfrage stellen.
-    </p>
+    <p>Auf dem iPhone berechnet DeenCH den Termin aus Gebetszeit und gewählter Vorwarnung. Die App übergibt Uhrzeit und Mitteilungstext an iOS zur lokalen Zustellung. Dafür benötigt DeenCH weder einen Push-Server noch einen Push-Gerätetoken. Je nach Einstellungen kann der Name des Gebets auf dem Sperrbildschirm oder einer gekoppelten Apple Watch erscheinen. Vorschau, Töne und Fokus lassen sich in den Systemeinstellungen anpassen. Erinnerungen können in der App ausgeschaltet werden.</p>
 
-    <h2>7. Externe Links und Teilen-Funktionen</h2>
-    <p>
-      DeenCH kann Funktionen anbieten, über die Nutzer bewusst einen externen Link im
-      Browser öffnen, Inhalte über die Android-Teilen-Funktion weitergeben oder eine
-      E-Mail in einer installierten E-Mail-App vorbereiten.
-    </p>
-    <p>
-      Eine solche Übermittlung wird durch den Nutzer ausgelöst. Welche Daten anschließend
-      von der ausgewählten Drittanbieter-App oder Webseite verarbeitet werden, richtet
-      sich nach deren eigenen Datenschutzbestimmungen. DeenCH sendet eine vorbereitete
-      Support-E-Mail nicht selbstständig im Hintergrund ab.
-    </p>
+    <p>Wer den Gebetsnamen auf der Uhr verbergen möchte, kann die Vorschau oder die Spiegelung in den Mitteilungseinstellungen anpassen. <a href="https://support.apple.com/de-ch/108369">Mitteilungen auf der Apple Watch verwalten</a></p>
 
-    <h2>8. Werbung, Analyse, Tracking und Verkauf von Daten</h2>
+    <h3>5.2 Gebetsplan in der Watch-App</h3>
+    <p>Die fünf täglichen Gebetszeiten berechnet das iPhone für den gewählten Ort, einschliesslich persönlicher Minutenkorrekturen. Ist die Uhr gekoppelt und die DeenCH-Watch-App installiert, übergibt die iPhone-App den aktualisierten Plan automatisch über Apples Watch Connectivity an die Uhr. Das geschieht auch bei ausgeschalteten Gebetserinnerungen.</p>
+    <p>Der Plan enthält die Ortsanzeige (zum Beispiel «Bern · Ersatzstandort»), die gewählte Sprache, kurze Anzeigetexte sowie für jedes Gebet den Namen, den Tag, die angezeigte Uhrzeit und den genauen Zeitpunkt. Die Uhr erhält die berechneten Termine für gestern, heute und die nächsten sieben Tage. GPS-Koordinaten, einzelne Korrekturwerte, Lesestellen und Lesezeichen gehören nicht zu diesen Daten. Die Watch-App fragt keinen eigenen Standort ab.</p>
+    <p>Die Uhr verwendet den zuletzt empfangenen Plan für die Tagesansicht, die folgenden Tage und den Countdown. So kann sie vorhandene Termine auch anzeigen, wenn das iPhone gerade ausser Reichweite ist. Ein neuer Plan ersetzt den bisherigen. Nach Ablauf der Termine braucht die Uhr eine Aktualisierung vom iPhone. DeenCH führt darüber kein serverseitiges Archiv. Die Erinnerungen plant weiterhin das iPhone.</p>
+
+    <h3>5.3 Tasbih auf der Uhr</h3>
+    <p>Beim geführten oder freien Zählen verarbeitet die Uhr Ihre Eingaben und den Zählstand im Arbeitsspeicher. Sie können den Zähler zurücksetzen. Öffnen Sie den Zähler mindestens fünf Sekunden nach dem Schliessen erneut, beginnt eine neue Sitzung. DeenCH sendet die Zählstände weder an das iPhone noch an den Support. Für diese Funktion greift die App auf keine Gesundheits-, Herzfrequenz- oder Trainingsdaten zu.</p>
+
+    <h2 id="support">6. Kontakt mit dem Support</h2>
+    <p>Wenn Sie uns über das Feedbackfenster schreiben, erstellt DeenCH einen E-Mail-Entwurf mit Ihrem Text, der gewählten App-Sprache und dem betroffenen App-Bereich. Bei Feedback aus dem Qurʾān-Leser können Sure und Vers im Entwurf stehen. Beim Öffnen erhält Ihre Mail-App die Empfängeradresse, den Betreff und den vorbereiteten Text. Sie können alles vor dem Versand prüfen, ändern oder den Entwurf verwerfen. Je nach Mailkonto kann Ihr Anbieter auch ungesendete Entwürfe speichern.</p>
+    <p>Wenn Sie die Nachricht absenden, erhalten wir sie im DeenCH-Supportpostfach. Besim Imeri führt dieses Postfach über ein persönliches Microsoft-Konto bei Outlook.com. Wir bearbeiten Ihre Absenderadresse, den Betreff, Ihre Nachricht, allfällige Anhänge und unsere Antworten, um Ihr Anliegen zu klären und Rückfragen zuzuordnen. Oft reichen die betroffene Funktion und eine kurze Fehlerbeschreibung. Wenn Sie einen Screenshot mitsenden, können Sie Namen, E-Mail-Adressen, Standortangaben oder private Mitteilungen vor dem Versand abdecken. Angaben zur religiösen Praxis brauchen Sie für allgemeine Supportfragen nicht zu machen.</p>
+    <p>Wie lange wir den Schriftwechsel aufbewahren, lesen Sie in <a href="#speicherdauer">Abschnitt 12</a>. Sie können uns unter <a href="mailto:kontakt.deench@outlook.com">kontakt.deench@outlook.com</a> um Auskunft oder Löschung bitten. Nennen Sie möglichst das Datum oder den Betreff. Das hilft uns, den Schriftwechsel zu finden. Kopien in Ihrem eigenen Mailkonto verwalten Sie selbst.</p>
+
+    <h2 id="teilen">7. Webseiten öffnen, Inhalte teilen und kopieren</h2>
+    <p><strong>Besuch dieser Datenschutzseite.</strong> Wenn Sie diese Seite aus der App öffnen, übergibt DeenCH die feste Webadresse an Ihren Browser. Die App fügt weder Ihren Standort noch Ihre Lesestelle oder eine Nutzerkennung an. Beim Abruf der öffentlichen Seite erreicht Ihre IP-Adresse den Hostingdienst GitHub Pages. GitHub protokolliert sie nach eigenen Angaben zu Sicherheitszwecken. Der Seitenquelltext enthält keine von DeenCH eingebundenen Analyse-Skripte, Werbepixel oder extern geladenen Schriftarten. <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub Pages zur Protokollierung von Zugriffen</a></p>
+    <p><strong>Quellen und Lizenzen.</strong> Tippen Sie zum Beispiel auf eine Hadith-Quelle oder die Tanzil-Lizenz, ruft Ihr Browser die konkrete Zieladresse ab. Der Websiteanbieter kann dadurch Ihre IP-Adresse und die aufgerufene Seite sehen. Bei einem Quellenlink kann bereits die Adresse erkennen lassen, welchen religiösen Inhalt Sie geöffnet haben.</p>
+    <p><strong>Teilen eines Qurʾān-Verses.</strong> DeenCH übergibt den Namen und die Nummer der Sure, die Versnummer, den arabischen Text, die Übersetzung und den Hinweis «DeenCH» an das Teilen-Menü. Wie es weitergeht, bestimmen Sie dort. Wählen Sie beispielsweise eine Nachrichten-App, erhält diese den Text zur weiteren Verwendung. Einen bereits versendeten Text können wir beim Empfänger nicht löschen.</p>
+    <p><strong>Zwischenablage.</strong> Wenn Sie «Kopieren» wählen, legt die App den Text in der Systemzwischenablage ab. Auch wenn die technische Übergabe an das Teilen-Menü fehlschlägt, kopiert DeenCH den Vers als Ersatz. Bei aktivierter allgemeiner Zwischenablage von Apple kann der Text auf weiteren Ihrer Geräte zum Einfügen bereitstehen.</p>
+
+    <h2 id="tracking">8. Werbung, Analyse, Tracking und Verkauf von Daten</h2>
     <p>In der aktuellen Version von DeenCH gilt:</p>
     <ul>
       <li>keine Werbung,</li>
@@ -239,43 +239,36 @@
       <li>keine Nutzung von Standortdaten für Marketing oder personalisierte Werbung.</li>
     </ul>
 
-    <h2>9. Benutzerkonten, Käufe und Abonnements</h2>
+    <h2 id="konten">9. Benutzerkonten, Käufe und Abonnements</h2>
     <p>
       DeenCH bietet derzeit keine Benutzerkonten, keine Anmeldung und keine
-      konto-basierte Profilerstellung an. In der aktuellen veröffentlichten Version gibt
-      es außerdem keine aktiven digitalen Käufe oder Abonnements innerhalb der App.
+      konto-basierte Profilerstellung an. In den hier beschriebenen Fassungen gibt
+      es ausserdem keine aktiven digitalen Käufe oder Abonnements innerhalb der App.
     </p>
 
-    <h2>10. Empfänger und Drittanbieter</h2>
-    <p>
-      DeenCH gibt Nutzerdaten nicht für Werbe- oder Marketingzwecke an
-      Drittunternehmen weiter. Eine technische Verarbeitung durch Dritte kann nur dort
-      stattfinden, wo der Nutzer eine entsprechende Funktion verwendet oder das
-      Betriebssystem einen erforderlichen Systemdienst bereitstellt. Dazu können gehören:
-    </p>
+    <h2 id="empfaenger">10. Wer welche Daten erhält</h2>
     <ul>
-      <li>Standort-/Geocoding-Dienste des Betriebssystems oder Geräteanbieters,</li>
-      <li>vom Nutzer ausgewählte Browser-, E-Mail- oder Teilen-Apps,</li>
-      <li>Plattform- und Systemdienste, die unabhängig von DeenCH vom Geräte- oder Betriebssystemanbieter bereitgestellt werden.</li>
+      <li>Bei einer Ortssuche erhält der vom Gerät verwendete Geocoding-Dienst die Ortsangabe oder Koordinaten. Auf dem iPhone ist dies Apples Ortssuche (Abschnitt 3).</li>
+      <li>Ihre gekoppelte Apple Watch erhält bei installierter Begleit-App den Gebetsplan mit Ortsanzeige und Sprache. Über die Anzeige lokaler iPhone-Mitteilungen auf der Uhr entscheiden die Systemeinstellungen (Abschnitt 5).</li>
+      <li>Bei E-Mail-Kontakt verarbeiten Ihr Mailanbieter und Microsoft als Anbieter unseres Supportpostfachs die für die Nachricht erforderlichen Angaben (Abschnitt 6).</li>
+      <li>Beim Seitenaufruf erhält der Hostingdienst technische Zugriffsdaten. Beim Teilen erhält die von Ihnen ausgewählte App den übergebenen Text (Abschnitt 7).</li>
     </ul>
-    <p>
-      Welche konkrete Infrastruktur bei systemseitigen Diensten verwendet wird, kann je
-      nach Gerät und Anbieter unterschiedlich sein. DeenCH betreibt für diese Funktionen
-      keinen eigenen Drittanbieter-Datenbroker und erhält aus einer systemseitigen
-      Geocoding-Anfrage kein dauerhaftes Nutzerprofil.
-    </p>
 
-    <h2>11. Verarbeitung außerhalb der Schweiz</h2>
-    <p>
-      DeenCH selbst betreibt derzeit keinen eigenen Server zur Speicherung
-      personenbezogener App-Nutzerdaten. Bei Nutzung von Systemdiensten oder externen,
-      vom Nutzer gewählten Diensten kann eine Verarbeitung außerhalb der Schweiz
-      stattfinden. Der konkrete Verarbeitungsort hängt vom jeweiligen Geräte-,
-      Betriebssystem- oder Drittanbieter ab und richtet sich nach dessen
-      Datenschutzinformationen und technischen Diensten.
-    </p>
+    <h2 id="ausland">11. Bearbeitung von Personendaten im Ausland</h2>
+    <p>Für den E-Mail-Support nutzen wir Outlook.com, für die Bereitstellung dieser Datenschutzseite GitHub Pages. Wenn Sie uns eine E-Mail senden oder diese Seite aufrufen, können die dabei anfallenden Personendaten auch ausserhalb der Schweiz bearbeitet werden.</p>
 
-    <h2>12. Speicherdauer und Löschung</h2>
+    <h3>Supportanfragen über Outlook.com</h3>
+    <p>Microsoft verarbeitet für unser Supportpostfach Ihre Absenderadresse, den Betreff, den Inhalt Ihrer Nachricht und allfällige Anhänge. Vertragspartner für unser persönliches Outlook.com-Konto ist Microsoft Ireland Operations Limited mit Sitz in Irland. Microsoft nennt als mögliche Bearbeitungsorte die Region der Nutzenden, die USA sowie weitere Länder, in denen Microsoft, seine Konzerngesellschaften oder seine Dienstleister tätig sind. Einen bestimmten Speicherort für das DeenCH-Postfach weisen die öffentlichen Unterlagen nicht aus. <a href="https://www.microsoft.com/de-ch/servicesagreement">Microsoft-Servicevertrag, Ziffer 10</a> · <a href="https://www.microsoft.com/de-ch/privacy/privacystatement">Datenschutzerklärung von Microsoft</a></p>
+
+    <h3>Aufruf dieser Seite über GitHub Pages</h3>
+    <p>GitHub protokolliert beim Aufruf dieser Seite Ihre IP-Adresse zu Sicherheitszwecken. Wenn Sie die Seite aus der DeenCH-App öffnen, übergibt die App dem Browser die feste Webadresse. Sie fügt weder Ihren Standort noch Ihre Qurʾān-Lesestelle oder eine Nutzerkennung hinzu. GitHub nennt als mögliche Bearbeitungsorte die Region der Nutzenden, die USA und weitere Länder, in denen GitHub, seine Konzerngesellschaften oder seine Dienstleister tätig sind. Für die Auslieferung von Inhalten führt GitHub unter anderem Fastly mit Bearbeitungsort USA auf. <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub Pages zur Protokollierung von IP-Adressen</a> · <a href="https://docs.github.com/en/site-policy/privacy-policies/github-subprocessors">Dienstleister von GitHub</a></p>
+
+    <h3>Schutz bei der Übermittlung</h3>
+    <p>Microsoft Corporation und GitHub geben an, nach dem Datenschutzrahmen Schweiz–USA (Swiss-U.S. Data Privacy Framework) zertifiziert zu sein. Für Übermittlungen aus der Schweiz gilt dieser Rahmen, soweit die empfangende US-Gesellschaft und die betreffenden Daten von der Zertifizierung erfasst sind. Beide Anbieter nennen für internationale Übermittlungen je nach Fall auch Standardvertragsklauseln, die den Empfänger zum Schutz der Personendaten verpflichten. <a href="https://www.microsoft.com/de-ch/privacy/privacystatement">Angaben von Microsoft</a> · <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement#international-data-transfers">Angaben von GitHub</a> · <a href="https://www.edoeb.admin.ch/de/bekanntgabe-von-personendaten-ins-ausland">Erläuterungen des EDÖB</a></p>
+
+    <h2 id="speicherdauer">12. Speicherdauer und Löschung</h2>
+    <p><strong>Support und Verbesserungsvorschläge.</strong> Wir bewahren Ihre Nachricht und allfällige Anhänge so lange auf, wie wir sie für Ihr Anliegen oder eine konkrete Rückfrage brauchen. Melden Sie zum Beispiel eine mögliche Korrektur an einer Qurʾān-Übersetzung, können wir die betroffene Textstelle und den Korrekturvorschlag ohne Angaben zu Ihrer Person zur fachlichen Prüfung festhalten. Sobald wir den Schriftwechsel dafür nicht mehr brauchen, löschen wir die E-Mail, unsere Antworten und allfällige archivierte Kopien samt Anhängen aus unserem Postfach. Gelöschte Nachrichten können je nach Postfachfunktion vorübergehend wiederherstellbar bleiben.</p>
+    <p>Einzelne Unterlagen bewahren wir länger auf, wenn eine gesetzliche Pflicht dies verlangt oder wenn wir sie benötigen, um konkrete Ansprüche zu prüfen oder zu wahren. Die Aufbewahrung beschränkt sich auf die dafür erforderlichen Angaben. Sobald der Grund entfällt, löschen wir diese Unterlagen.</p>
     <p>
       Standortdaten, die DeenCH für eine aktuelle Standortanfrage benötigt, werden von
       DeenCH nur für die Durchführung der jeweiligen Funktion verarbeitet und nicht als
@@ -283,8 +276,7 @@
     </p>
     <p>
       Lokal gespeicherte Einstellungen und Fortschrittsdaten bleiben grundsätzlich auf
-      dem Gerät, bis Nutzer sie in der App ändern oder zurücksetzen, die App-Daten über
-      Android löschen oder die App deinstallieren.
+      dem Gerät, bis Nutzer sie in der App ändern oder zurücksetzen, die App-Daten unter Android löschen oder die App auf dem Gerät löschen. Beim blossen Auslagern einer App behält iOS deren Dokumente und Daten. Bereits erstellte Gerätesicherungen verwalten Nutzer über die Einstellungen des Sicherungsdienstes.
     </p>
     <p>
       Da DeenCH derzeit keine Benutzerkonten und keine eigene serverseitige
@@ -292,43 +284,18 @@
       Serverdaten, die über eine Kontolöschfunktion gelöscht werden müssten.
     </p>
 
-    <h2>13. Datenschutzrechte</h2>
-    <p>
-      Soweit gesetzlich anwendbar, können betroffene Personen insbesondere Auskunft über
-      die Verarbeitung ihrer personenbezogenen Daten sowie Berichtigung oder Löschung
-      verlangen und weitere gesetzliche Datenschutzrechte geltend machen.
-    </p>
-    <p>
-      Da die meisten DeenCH-Daten ausschließlich lokal auf dem Gerät gespeichert werden,
-      hat DeenCH auf diese lokalen Daten grundsätzlich keinen serverseitigen Zugriff.
-      Lokale Daten können über die App-Funktionen, die Android-App-Datenverwaltung oder
-      durch Deinstallation der App entfernt werden.
-    </p>
-    <p>
-      Datenschutzanfragen können an
-      <a href="mailto:kontakt.deench@outlook.com">kontakt.deench@outlook.com</a>
-      gerichtet werden.
-    </p>
+    <p>Die begleitende App können Sie auch auf der Apple Watch entfernen. Ein auf der Uhr bereits empfangener Gebetsplan wird durch das Ausschalten der iPhone-Erinnerungen nicht gelöscht. Früher erstellte Gerätesicherungen und freiwillig geteilte Inhalte verwalten Sie beim jeweiligen Gerät oder Empfänger.</p>
 
-    <h2>14. Datensicherheit</h2>
-    <p>
-      DeenCH verfolgt das Prinzip der Datenminimierung und beschränkt den Zugriff auf
-      Standort- und Gerätedaten auf die für die jeweilige Funktion erforderlichen Zwecke.
-      DeenCH betreibt derzeit keine eigene zentrale Nutzer-Datenbank.
-    </p>
-    <p>
-      DeenCH überträgt nicht absichtlich personenbezogene oder vertrauliche Nutzerdaten
-      über selbst implementierte unverschlüsselte Netzwerkverbindungen. Werden
-      systemseitige Dienste des Geräts verwendet, liegen Transportweg und technische
-      Absicherung dieser Systemkommunikation im Verantwortungsbereich des jeweiligen
-      Plattform- bzw. Diensteanbieters.
-    </p>
-    <p>
-      Trotz angemessener technischer und organisatorischer Maßnahmen kann bei digitalen
-      Systemen keine absolute Sicherheit garantiert werden.
-    </p>
+    <h2 id="rechte">13. Auskunft, Berichtigung und Löschung</h2>
+    <p>Sie können bei Besim Imeri unter <a href="mailto:kontakt.deench@outlook.com">kontakt.deench@outlook.com</a> Auskunft darüber verlangen, ob und welche Personendaten zu Ihnen bearbeitet werden. Sie können unrichtige Angaben berichtigen lassen und unter den gesetzlichen Voraussetzungen die Löschung verlangen. Schreiben Sie beispielsweise, auf welchen Supportkontakt sich Ihr Anliegen bezieht. Wenn die Zuordnung unklar ist, können wir die für eine sichere Identifikation erforderlichen Angaben erfragen.</p>
+    <p>Für ein Auskunftsbegehren nach Schweizer Recht gilt in der Regel eine Frist von 30 Tagen ab Eingang. Ist die Auskunft innerhalb dieser Frist nicht möglich, teilen wir Ihnen innerhalb derselben Frist mit, wann Sie mit der Auskunft rechnen können. <a href="https://www.fedlex.admin.ch/eli/cc/2022/491/de#art_25">Art. 25 DSG</a> · <a href="https://www.fedlex.admin.ch/eli/cc/2022/568/de#art_18">Art. 18 DSV</a></p>
+    <p>Wir können den an uns gesendeten Schriftwechsel im Postfach zuordnen. Auf Lesezeichen und andere Daten, die ausschliesslich auf Ihrem Gerät liegen, haben wir über den Support keinen Zugriff. Wie Sie solche Daten selbst verwalten, beschreiben die Abschnitte 4 und 12. Bei Datenschutzfragen in der Schweiz können Sie sich auch an den Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten wenden. <a href="https://www.edoeb.admin.ch/de/meine-rechte-kennen-und-durchsetzen">Informationen des EDÖB zu Ihren Rechten</a></p>
 
-    <h2>15. Minderjährige</h2>
+    <h2 id="datensicherheit">14. Schutz Ihrer Daten</h2>
+    <p>Gebetszeiten und Qibla werden auf dem Gerät berechnet. DeenCH führt dafür keine zentrale Datenbank über Ihre Standorte, Lesezeichen oder Zählstände. Wer Ihr entsperrtes Gerät nutzt oder eine Vorschau auf dem Sperrbildschirm sieht, kann unter Umständen erkennen, welche Inhalte Sie lesen oder für welches Gebet eine Erinnerung eingestellt ist. Sie können die Anzeige solcher Vorschauen in den Mitteilungseinstellungen Ihres Geräts beschränken.</p>
+    <p>Inhalte, die Sie selbst in eine E-Mail, eine andere App oder eine Gerätesicherung übernehmen, können dort auch nach der Löschung der DeenCH-App vorhanden sein. Für eine Löschung kommt es darauf an, wo die betreffende Kopie liegt. Für Nachrichten in unserem Supportpostfach erreichen Sie uns über den Kontakt in Abschnitt 6.</p>
+
+    <h2 id="minderjaehrige">15. Minderjährige</h2>
     <p>
       DeenCH ist in der aktuellen Ausrichtung nicht speziell für Kinder unter 13 Jahren
       konzipiert. Die Zielgruppe der App beginnt bei Jugendlichen ab 13 Jahren und
@@ -336,15 +303,15 @@
       personenbezogenes Werbeprofiling.
     </p>
 
-    <h2>16. Rechtsrahmen</h2>
+    <h2 id="rechtsrahmen">16. Rechtsrahmen</h2>
     <p>
       Die Datenverarbeitung durch den in der Schweiz ansässigen Verantwortlichen richtet
       sich insbesondere nach dem schweizerischen Datenschutzgesetz (DSG), soweit dieses
       anwendbar ist. Soweit in einem konkreten Fall weitere zwingende
-      Datenschutzvorschriften anwendbar sind, bleiben diese unberührt.
+      Datenschutzvorschriften anwendbar sind, bleiben diese unberührt. <a href="https://www.fedlex.admin.ch/eli/cc/2022/491/de">Schweizer Datenschutzgesetz, insbesondere Art. 5, 19, 25 und 32</a>
     </p>
 
-    <h2>17. Änderungen und neue Funktionen</h2>
+    <h2 id="aenderungen">17. Änderungen und neue Funktionen</h2>
     <p>
       DeenCH wird diese Datenschutzerklärung aktualisieren, wenn sich die tatsächliche
       Datenverarbeitung der App wesentlich ändert. Neue Funktionen, die zusätzliche
@@ -354,20 +321,20 @@
     </p>
     <p>
       Vor der Aktivierung einer solchen Funktion werden – soweit erforderlich – diese
-      Datenschutzerklärung, die Angaben zur Datensicherheit bei Google Play und
+      Datenschutzerklärung, die Datenschutzangaben bei Google Play und in Apples App Store sowie
       gegebenenfalls die Einwilligungs- bzw. Berechtigungsdialoge in der App angepasst.
       Die jeweils veröffentlichte Fassung trägt oben ein Aktualisierungsdatum.
     </p>
 
     <div class="note">
-      <strong>Wichtig:</strong> Maßgeblich ist immer die tatsächlich veröffentlichte
+      <strong>Wichtig:</strong> Massgeblich ist immer die tatsächlich veröffentlichte
       App-Version. Wenn DeenCH künftig beispielsweise neue Online-Dienste,
       Benutzerkonten, Cloud-Synchronisierung, Analysefunktionen oder Bezahlfunktionen
       einführt, wird die Datenschutzerklärung vor bzw. mit Einführung dieser Funktionen
       entsprechend aktualisiert.
     </div>
 
-    <h2>18. Kontakt</h2>
+    <h2 id="kontakt">18. Kontakt</h2>
     <p>
       Fragen zu dieser Datenschutzerklärung oder zur Verarbeitung personenbezogener Daten
       können an
@@ -375,6 +342,7 @@
       gesendet werden.
     </p>
   </article>
+  </div>
 
   <footer>© 2026 DeenCH · Datenschutzerklärung</footer>
 </main>
